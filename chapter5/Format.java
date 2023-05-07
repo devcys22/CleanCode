@@ -42,4 +42,59 @@ class Format {
         }
     }
 
-}
+///가로 형식///
+
+        private void measureLine(String line) {
+            lineCount++;
+
+            // 흔히 볼 수 있는 코드인데, 할당 연산자 좌우로 공백을 주어 왼쪽,오른쪽 요소가 확실하게 구분된다.
+            int lineSize = line.length();
+            totalChars += lineSize;
+
+            // 반면 함수이름과 괄호 사이에는 공백을 없앰으로써 함수와 인수의 밀접함을 보여준다
+            // 괄호 안의 인수끼리는 쉼표 뒤의 공백을 통해 인수가 별개라는 사실을 보여준다.
+            lineWidthHistogram.addLine(lineSize, lineCount);
+            recordWidestLine(lineSize);
+        }
+
+    public class FitNesseExpediter implements ResponseSender {
+        private Socket socket;
+        private InputStream input;
+        private OutputStream output;
+        private Reques request;
+        private Response response;
+        private FitNesseContex context;
+        protected long requestParsingTimeLimit;
+        private long requestProgress;
+        private long requestParsingDeadline;
+        private boolean hasError;
+        }
+        //정렬이 필요할 정도로 목록이 길다면 문제는 목록의 길이이지 정렬이 부족해서가 아니다. 선언부가 길다는 것은 클래스를 쪼개야 한다는 것을 의미한다.
+
+
+    //들여쓰기 무시하기
+    public class CommentWidget extends TextWidget {
+        public static final String REGEXP = "^#[^\r\n]*(?:(?:\r\n)|\n|\r)?";
+
+        public CommentWidget(ParentWidget parent, String text){
+            super(parent, text);
+        }
+
+        public String render() throws Exception {
+            return "";
+        }
+    }
+    //들여쓰기
+    public class CommentWidget extends TextWidget {
+        public static final String REGEXP = "^#[^\r\n]*(?:(?:\r\n)|\n|\r)?";
+
+        public CommentWidget(ParentWidget parent, String text){
+            super(parent, text);
+        }
+
+        public String render() throws Exception {
+            return "";
+        }
+    }
+
+    }
